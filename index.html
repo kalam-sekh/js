@@ -3,71 +3,103 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JS Enterprise</title>
+  <meta name="description" content="JS Enterprise - Professional Iron Platforms, Steel Structures, Sheds & Sliding Gates Construction Services" />
+  <meta name="keywords" content="steel structures, iron platforms, industrial sheds, sliding gates, mechanical construction" />
+  <title>JS Enterprise - Professional Steel & Iron Construction Services</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='grad1' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' style='stop-color:%23667eea;stop-opacity:1' /><stop offset='100%25' style='stop-color:%23764ba2;stop-opacity:1' /></linearGradient></defs><rect width='100' height='100' fill='url(%23grad1)' rx='15'/><text x='50' y='35' font-family='Arial, sans-serif' font-size='24' font-weight='bold' fill='white' text-anchor='middle'>JS</text><rect x='20' y='45' width='60' height='8' fill='%23FFD700' rx='4'/><rect x='25' y='58' width='50' height='6' fill='white' rx='3'/><rect x='30' y='68' width='40' height='6' fill='white' rx='3'/><rect x='20' y='78' width='60' height='8' fill='%23FFD700' rx='4'/></svg>">
+  <link rel="apple-touch-icon" href="favicon.svg">
 </head>
 <body>
-  <header>
-  <div class="top-contact-bar">
-    📞 Phone: +91 891 039 8260 | ✉️ Email: jul@jsenterprise.in
+  <!-- Loading Screen -->
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loader"></div>
   </div>
-  <div class="overlay">
-    <h1>JS Enterprise</h1>
-    <p>Iron Platforms | Steel Structures | Sheds | Sliding Gates</p>
-  </div>
-</header>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#electromechanical">Electromechanical</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+  <nav id="navbar">
+    <div class="navbar-container">
+      <a href="#home" class="navbar-brand">🏗️ JS Enterprise</a>
+
+      <button class="mobile-menu-toggle" id="mobileMenuToggle">
+        ☰
+      </button>
+
+      <ul class="navbar-menu" id="navbarMenu">
+        <li><a href="#home" class="nav-link active">🏠 Home</a></li>
+        <li><a href="#about" class="nav-link">👥 About</a></li>
+        <li><a href="#services" class="nav-link">🔧 Services</a></li>
+        <li><a href="#electromechanical" class="nav-link">⚡ Electromechanical</a></li>
+        <li><a href="#projects" class="nav-link">📋 Projects</a></li>
+        <li><a href="#contact" class="nav-link">📞 Contact</a></li>
+      </ul>
+    </div>
   </nav>
+  </nav>
+
+
+  <header>
+    <div class="overlay">
+      <h1>JS Enterprise</h1>
+      <p>Iron Platforms | Steel Structures | Sheds | Sliding Gates</p>
+    </div>
+  </header>
+
+
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" id="scrollToTop" onclick="scrollToTop()">
+    ↑
+  </button>
+
 <canvas id="bgCanvas"></canvas>
 <div id="content-wrapper">
   <section id="home">
-    <h2>Welcome to JS Enterprise</h2>
-    <p>We provide full contract solutions for mechanical construction, including labor and materials. Reliable, experienced, and quality-focused, we pride ourselves on delivering projects that meet the highest standards of safety, durability, and efficiency.
+    <h2>🏭 Welcome to JS Enterprise</h2>
+    <p>We provide full contract solutions for mechanical construction, including labor and materials. Reliable, experienced, and quality-focused, we pride ourselves on delivering projects that meet the highest standards of safety, durability, and efficiency.</p>
 
-Our expert team specializes in fabricating and installing iron platforms, steel structures, sheds, and sliding gates tailored to your specific needs. With years of industry experience, we understand the unique challenges of mechanical construction and are committed to providing innovative solutions that drive success.
+    <p>Our expert team specializes in fabricating and installing iron platforms, steel structures, sheds, and sliding gates tailored to your specific needs. With years of industry experience, we understand the unique challenges of mechanical construction and are committed to providing innovative solutions that drive success.</p>
 
-At JS Enterprise, customer satisfaction is our top priority. We work closely with you from project inception to completion, ensuring transparent communication, timely delivery, and exceptional craftsmanship. Whether your project is industrial, commercial, or custom-designed, trust us to bring your vision to life with precision and professionalism.
+    <p>At JS Enterprise, customer satisfaction is our top priority. We work closely with you from project inception to completion, ensuring transparent communication, timely delivery, and exceptional craftsmanship. Whether your project is industrial, commercial, or custom-designed, trust us to bring your vision to life with precision and professionalism.</p>
 
-Partner with JS Enterprise — your trusted source for mechanical construction excellence.</p>
+    <p>Partner with JS Enterprise — your trusted source for mechanical construction excellence.</p>
   </section>
 
   <section id="about">
-    <h2>About Us</h2>
-    <p>JS Enterprise is a trusted name in mechanical construction, known for delivering high-quality, durable, and cost-effective solutions. With a solid foundation built over years of hands-on experience, we specialize in the design, fabrication, and installation of iron platforms, steel structures, industrial sheds, and customized sliding gates.
+    <h2>🎯 About Us</h2>
+    <p>JS Enterprise is a trusted name in mechanical construction, known for delivering high-quality, durable, and cost-effective solutions. With a solid foundation built over years of hands-on experience, we specialize in the design, fabrication, and installation of iron platforms, steel structures, industrial sheds, and customized sliding gates.</p>
 
-Our team is composed of skilled engineers, fabricators, and project managers who are committed to delivering excellence in every aspect of our work. We cater to both industrial and commercial clients, offering end-to-end project execution — from initial consultation and planning to on-site construction and final handover.
+    <p>Our team is composed of skilled engineers, fabricators, and project managers who are committed to delivering excellence in every aspect of our work. We cater to both industrial and commercial clients, offering end-to-end project execution — from initial consultation and planning to on-site construction and final handover.</p>
 
-At JS Enterprise, we combine traditional craftsmanship with modern construction techniques to achieve long-lasting, structurally sound results. Our approach is customer-centric: we listen, adapt, and deliver based on each client's specific requirements and project goals.
+    <p>At JS Enterprise, we combine traditional craftsmanship with modern construction techniques to achieve long-lasting, structurally sound results. Our approach is customer-centric: we listen, adapt, and deliver based on each client's specific requirements and project goals.</p>
 
-Over the years, we've built a reputation for reliability, safety, and integrity. Whether it's a large-scale factory structure or a bespoke gate solution, we bring the same level of dedication and professionalism to every job.
+    <p>Over the years, we've built a reputation for reliability, safety, and integrity. Whether it's a large-scale factory structure or a bespoke gate solution, we bring the same level of dedication and professionalism to every job.</p>
 
-Choose JS Enterprise — where quality meets commitment.</p>
+    <p>Choose JS Enterprise — where quality meets commitment.</p>
   </section>
 
   <section id="services">
-    <h2>Our Services</h2>
+    <h2>⚙️ Our Services</h2>
     <div class="services">
       <div class="card">
-        <img src="images/iron_platfrom.jpeg" alt="Iron Platform">
-        <h3>Iron Platforms</h3>
-        <p>Custom-built iron platforms for industrial use, designed for heavy-duty applications.</p>
+        <img src="images/iron_platfrom.jpeg" alt="Iron Platform Construction">
+        <h3>🏗️ Iron Platforms</h3>
+        <p>Custom-built iron platforms designed for industrial applications with superior durability and precision engineering.</p>
       </div>
       <div class="card">
-        <img src="images/steel-structure.jpeg" alt="Steel Structures">
-        <h3>Steel Structures</h3>
-        <p>Reliable and strong steel framework construction for industrial buildings.</p>
+        <img src="images/steel-structure.jpeg" alt="Steel Structure Construction">
+        <h3>🏢 Steel Structures</h3>
+        <p>Reliable and robust steel framework construction for commercial and industrial buildings with advanced engineering.</p>
       </div>
       <div class="card">
-        <img src="images/sheds-roofing.jpeg" alt="Sheds and Roofing">
-        <h3>Sheds & Roofing</h3>
-        <p>Durable sheds and roofing solutions for factories and warehouses.</p>
+        <img src="images/sheds-roofing.jpeg" alt="Industrial Sheds and Roofing">
+        <h3>🏭 Sheds & Roofing</h3>
+        <p>Durable sheds and comprehensive roofing solutions for factories, warehouses, and industrial facilities.</p>
       </div>
       <div class="card">
         <img src="images/sliding-gate.jpeg" alt="Sliding Gates">
@@ -115,22 +147,22 @@ Choose JS Enterprise — where quality meets commitment.</p>
   </section>
 
   <section id="projects">
-    <h2>Our Projects</h2>
+    <h2>🏆 Our Projects</h2>
     <div class="projects">
       <div class="card">
         <img src="images/project1.jpeg" alt="Iron Platform Project">
-        <h3>Iron Platform Installation</h3>
-        <p>Heavy-duty iron platform construction for True Value manufacturing facility, supporting 50-ton capacity.</p>
+        <h3>🏗️ Iron Platform for True Value</h3>
+        <p>Successfully delivered a comprehensive iron platform solution ensuring optimal functionality and safety standards.</p>
       </div>
       <div class="card">
         <img src="images/project2.jpeg" alt="Steel Shed Project">
-        <h3>Industrial Steel Shed</h3>
-        <p>Large-scale steel shed construction at TATA Motors facility with advanced ventilation systems.</p>
+        <h3>🏭 Steel Shed at TATA Motors</h3>
+        <p>Constructed a large-scale industrial shed with premium steel framework for enhanced operational efficiency.</p>
       </div>
       <div class="card">
-        <img src="images/project3.jpeg" alt="Sliding Gate Project">
-        <h3>Automated Gate System</h3>
-        <p>Automated sliding gate installation at Rubi Hospital with security integration and remote control.</p>
+        <img src="images/project3.jpeg" alt="Sliding Gate Installation">
+        <h3>🚪 Gate Installation in Rubi Hospital</h3>
+        <p>Implemented advanced sliding gate system with automated controls for enhanced security and accessibility.</p>
       </div>
       <div class="card">
         <img src="images/electrical-panel.jpg" alt="Electrical Panel Project">
@@ -150,38 +182,54 @@ Choose JS Enterprise — where quality meets commitment.</p>
     </div>
   </section>
    <section id="contact">
-    <h2>Contact Us</h2>
+    <h2>📞 Contact Us</h2>
+    <p style="text-align: center; font-size: 1.2rem; margin-bottom: 2rem; color: #667eea;">
+      Ready to start your next project? Get in touch with our expert team today!
+    </p>
     <form onsubmit="submitForm(event)">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send Message</button>
+      <input type="text" placeholder="👤 Your Full Name" required />
+      <input type="email" placeholder="📧 Your Email Address" required />
+      <input type="tel" placeholder="📱 Your Phone Number" />
+      <textarea placeholder="💬 Tell us about your project requirements..." rows="6" required></textarea>
+      <button type="submit">🚀 Send Message</button>
     </form>
   </section>
 
-  <footer>
- 
-  <p>📞 +91 891 039 8260 | ✉️ jul@jsenterprise.in</p>
-   <p>&copy; 2025 JS Enterprise. All rights reserved. Devloped by AK International</p>
-</footer>
 </div>
+
+<footer>
+  <div style="margin-bottom: 20px;">
+    <h3 style="color: #FFD700; margin-bottom: 15px; font-size: 1.5rem;">🏗️ JS Enterprise</h3>
+    <p style="font-size: 1.1rem; margin-bottom: 10px;">Your Trusted Partner in Steel & Iron Construction</p>
+  </div>
+  
+  <div style="margin: 20px 0;">
+    <p style="font-size: 1.2rem; font-weight: 600;">📞 +91 891 039 8260 | ✉️ jul@jsenterprise.in</p>
+    <p style="font-size: 1rem; opacity: 0.9;">🏭 Specializing in Iron Platforms | Steel Structures | Industrial Sheds | Sliding Gates</p>
+  </div>
+  
+  <div style="border-top: 1px solid rgba(255, 255, 255, 0.2); padding-top: 20px; margin-top: 25px;">
+    <p>&copy; 2025 JS Enterprise. All rights reserved. | Developed by ⚡ AK International</p>
+  </div>
+</footer>
 <script>
+  // Enhanced particle system
   const canvas = document.getElementById("bgCanvas");
   const ctx = canvas.getContext("2d");
 
   let width = canvas.width = window.innerWidth;
   let height = canvas.height = window.innerHeight;
 
-  const mode = 3; // Always burst mode
-
   const colorThemes = [
-    ["#3498db", "#2ecc71"],
-    ["#e67e22", "#f1c40f"],
-    ["#9b59b6", "#1abc9c"],
-    ["#e74c3c", "#16a085"]
+    ["#667eea", "#764ba2", "#f093fb"],
+    ["#4facfe", "#00f2fe", "#43e97b"],
+    ["#fa709a", "#fee140", "#667eea"],
+    ["#a8edea", "#fed6e3", "#d299c2"]
   ];
 
   let particles = [];
+  let mouseX = 0;
+  let mouseY = 0;
 
   function Particle(x, y, dx, dy, radius, color) {
     this.x = x;
@@ -190,17 +238,28 @@ Choose JS Enterprise — where quality meets commitment.</p>
     this.dy = dy;
     this.radius = radius;
     this.color = color;
+    this.opacity = Math.random() * 0.6 + 0.2;
 
     this.draw = function () {
+      ctx.save();
+      ctx.globalAlpha = this.opacity;
       ctx.beginPath();
       ctx.fillStyle = this.color;
       ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
       ctx.fill();
+      ctx.restore();
     };
 
     this.update = function () {
       if (this.x + this.radius > width || this.x - this.radius < 0) this.dx = -this.dx;
       if (this.y + this.radius > height || this.y - this.radius < 0) this.dy = -this.dy;
+
+      // Mouse interaction
+      const distance = Math.sqrt((mouseX - this.x) ** 2 + (mouseY - this.y) ** 2);
+      if (distance < 100) {
+        this.dx += (this.x - mouseX) * 0.0001;
+        this.dy += (this.y - mouseY) * 0.0001;
+      }
 
       this.x += this.dx;
       this.y += this.dy;
@@ -211,15 +270,15 @@ Choose JS Enterprise — where quality meets commitment.</p>
 
   function initParticles() {
     particles = [];
-    const colorSet = colorThemes[mode % colorThemes.length];
-    const count = 30; // burst mode particle count
+    const colorSet = colorThemes[Math.floor(Math.random() * colorThemes.length)];
+    const count = 40;
 
     for (let i = 0; i < count; i++) {
-      const radius = Math.random() * 8 + 6; // bigger particles
+      const radius = Math.random() * 6 + 3;
       const x = Math.random() * (width - radius * 2) + radius;
       const y = Math.random() * (height - radius * 2) + radius;
-      const dx = (Math.random() - 0.5) * 0.5;
-      const dy = (Math.random() - 0.5) * 0.5;
+      const dx = (Math.random() - 0.5) * 0.8;
+      const dy = (Math.random() - 0.5) * 0.8;
       const color = colorSet[Math.floor(Math.random() * colorSet.length)];
       particles.push(new Particle(x, y, dx, dy, radius, color));
     }
@@ -240,30 +299,177 @@ Choose JS Enterprise — where quality meets commitment.</p>
     initParticles();
   }
 
+  // Mouse tracking
+  document.addEventListener('mousemove', (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+  });
+
   window.addEventListener("resize", resizeCanvas);
 
   // Initial setup
   resizeCanvas();
   animate();
 
+  // Loading screen
+  window.addEventListener('load', function() {
+    setTimeout(() => {
+      document.getElementById('loadingScreen').classList.add('hidden');
+    }, 1000);
+  });
+
+  // Scroll to top functionality
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+
+  // Mobile menu functionality
+  const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+  const navbarMenu = document.getElementById('navbarMenu');
+  
+  mobileMenuToggle.addEventListener('click', function() {
+    navbarMenu.classList.toggle('active');
+    // Animate hamburger icon
+    if (navbarMenu.classList.contains('active')) {
+      mobileMenuToggle.innerHTML = '✕';
+    } else {
+      mobileMenuToggle.innerHTML = '☰';
+    }
+  });
+
+  // Close mobile menu when clicking on a link
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', function() {
+      navbarMenu.classList.remove('active');
+      mobileMenuToggle.innerHTML = '☰';
+    });
+  });
+
+  // Show/hide scroll to top button
+  window.addEventListener('scroll', function() {
+    const scrollToTopBtn = document.getElementById('scrollToTop');
+    const navbar = document.getElementById('navbar');
+    
+    if (window.pageYOffset > 300) {
+      scrollToTopBtn.classList.add('visible');
+    } else {
+      scrollToTopBtn.classList.remove('visible');
+    }
+
+    // Add scrolled class to navbar
+    if (window.pageYOffset > 100) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
+
+  // Smooth scrolling for navigation links
+  document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
+
+  // Active link highlighting
+  function updateActiveLink() {
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-link');
+    
+    let current = '';
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+      if (scrollY >= (sectionTop - 200)) {
+        current = section.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === `#${current}`) {
+        link.classList.add('active');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', updateActiveLink);
+
+  // Enhanced form submission
   function submitForm(event) {
     event.preventDefault();
     
-    // Get form data
     const form = event.target;
     const name = form.querySelector('input[type="text"]').value;
     const email = form.querySelector('input[type="email"]').value;
+    const phone = form.querySelector('input[type="tel"]').value;
     const message = form.querySelector('textarea').value;
     
-    // Simple validation
+    // Form validation
     if (name && email && message) {
+      // Add loading animation to button
+      const button = form.querySelector('button');
+      const originalText = button.innerHTML;
+      button.innerHTML = '⏳ Sending...';
+      button.disabled = true;
+      
       // Simulate form submission
-      alert(`Thank you, ${name}! Your message has been received. We'll get back to you at ${email} soon.`);
-      form.reset();
+      setTimeout(() => {
+        alert(`✅ Thank you, ${name}! Your message has been received successfully.\n\n📧 We'll get back to you at ${email} within 24 hours.\n\n🏗️ JS Enterprise - Your Trusted Construction Partner`);
+        form.reset();
+        button.innerHTML = originalText;
+        button.disabled = false;
+      }, 2000);
     } else {
-      alert('Please fill in all fields.');
+      alert('⚠️ Please fill in all required fields (Name, Email, and Message).');
     }
   }
+
+  // Intersection Observer for animations
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -100px 0px'
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, observerOptions);
+
+  // Observe all sections for scroll animations
+  document.addEventListener('DOMContentLoaded', () => {
+    const sections = document.querySelectorAll('section');
+    sections.forEach(section => {
+      section.style.opacity = '0';
+      section.style.transform = 'translateY(50px)';
+      section.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+      observer.observe(section);
+    });
+  });
+
+  // Add dynamic particle color changes
+  setInterval(() => {
+    const colorSet = colorThemes[Math.floor(Math.random() * colorThemes.length)];
+    particles.forEach((particle, index) => {
+      if (Math.random() < 0.1) { // 10% chance to change color
+        particle.color = colorSet[Math.floor(Math.random() * colorSet.length)];
+      }
+    });
+  }, 5000);
 </script>
 
 </body>
